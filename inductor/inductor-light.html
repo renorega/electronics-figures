@@ -411,7 +411,32 @@ input[type=range]:active::-webkit-slider-thumb{background:var(--anatomy-hi)}
       <p>The coil's voltage is its inductance times how fast the current changes. In this loop the supply's voltage is shared: <code>v<sub>supply</sub> = i·R + v<sub>LED</sub> + v<sub>L</sub></code>, with R = 220 Ω for the resistor plus 30 Ω of coil wire, and a red LED that starts to glow at 1.75 V. The current approaches its final value with time constant τ = L / R<sub>total</sub>: about 63 % after τ, and essentially all of it after 5τ. Inductive reactance X<sub>L</sub> = 2πfL is why fast changes get through so poorly.</p>
     </article>
   </div>
-</section></main><script type="module">const AZIMUTH = 45;
+</section></main><script type="module">/*
+Isometric drawing kit from Anatomy by Ryan (wheresryan): https://skills.wheresryan.sh/anatomy
+
+MIT License
+
+Copyright (c) 2026 Ryan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+const AZIMUTH = 45;
 const ELEVATION = 30;
 const SHADES = 4;
 const RADIANS = Math.PI / 180;

@@ -2,7 +2,7 @@
 
 Five interactive drawings that show how simple electronic parts behave. Each one is a little workbench you can play with: turn knobs, flip switches, and watch the current move, the lamps glow and the meters swing.
 
-They are written for curious beginners, including kids in elementary school. Every number on the screen comes from a real physics model of the circuit, so what you see is what the circuit would really do (sometimes slowed down so you can follow it).
+They are written for curious beginners, including kids in elementary school. Every number on the screen comes from a simplified physics model of the circuit, so the figures behave the way the real circuit does in broad strokes (sometimes slowed down so you can follow it). Real parts have extra details the models leave out.
 
 **Play with them online:** https://renorega.github.io/electronics-figures/
 
@@ -73,6 +73,6 @@ node build.mjs --light   # light page
 
 ## Credits
 
-These figures were made with the help of [**Anatomy**](https://skills.wheresryan.sh/anatomy), a Claude Code skill by wheresryan for building interactive isometric figures. If you'd like to make figures like these yourself, start there.
+The code for these figures was written by [Claude Code](https://claude.com/claude-code), Anthropic's AI coding assistant, working from my ideas and requests, using [**Anatomy**](https://skills.wheresryan.sh/anatomy), a Claude Code skill by Ryan (wheresryan) for building interactive isometric figures. If you'd like to make figures like these yourself, start there.
 
-The isometric drawing toolkit in `shared/` comes from the Anatomy skill and is used under its MIT license (see `shared/kit/LICENSE`). Everything else is under the MIT license in `LICENSE`.
+The isometric drawing toolkit in `shared/` comes from the Anatomy skill and is used under its MIT license (see `shared/kit/LICENSE`). A copy of that license is also embedded in every finished page, so it travels with the page if you download it. Everything else is under the MIT license in `LICENSE`.
