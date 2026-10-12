@@ -1,6 +1,6 @@
 # Electronics figures
 
-Five interactive drawings that show how simple electronic parts behave. Each one is a little workbench you can play with: turn knobs, flip switches, and watch the current move, the lamps glow and the meters swing.
+Four interactive drawings that show how simple electronic parts behave. Each one is a little workbench you can play with: turn knobs, flip switches, and watch the current move, the lamps glow and the meters swing.
 
 They are written for curious beginners, including kids in elementary school. Every number on the screen comes from a simplified physics model of the circuit, so the figures behave the way the real circuit does in broad strokes (sometimes slowed down so you can follow it). Real parts have extra details the models leave out.
 
@@ -38,12 +38,9 @@ The two parts side by side on one bench, each with its own lamp. Use steady powe
 
 [Play (light)](https://renorega.github.io/electronics-figures/twins/twins-light.html) · [Play (dark)](https://renorega.github.io/electronics-figures/twins/twins.html)
 
-### Series RLC circuit
-![RLC circuit figure](images/rlc.png)
+### Work in progress: series RLC circuit
 
-A resistor (R), a coil (L) and a capacitor (C) in one loop. Energy sloshes back and forth between the coil and the capacitor, and the oscilloscope shows the current "ringing" and fading away. Change each part and see how the ringing changes.
-
-[Play (light)](https://renorega.github.io/electronics-figures/rlc/rlc-light.html) · [Play (dark)](https://renorega.github.io/electronics-figures/rlc/rlc.html)
+The `rlc/` folder holds a fifth figure that is still being improved: a resistor (R), a coil (L) and a capacitor (C) in one loop, where energy sloshes back and forth and the current "rings". It isn't on the website yet. To try it, rebuild it yourself (see [Rebuilding a page](#rebuilding-a-page)) and open `rlc/rlc-light.html`.
 
 ## How the project is organised
 
@@ -54,7 +51,8 @@ resistor/  capacitor/  inductor/  twins/  rlc/   one folder per figure
   build.mjs     draws the parts and puts the page together
   panel.mjs     the control panel and the explanations
   live.js       the animation and everything you can click
-  <name>.html, <name>-light.html   the finished pages (dark and light)
+  <name>.html, <name>-light.html   the finished pages (dark and light; not
+                                   included for rlc/ until it's ready)
 shared/        the drawing toolkit that all figures use
 images/        the pictures in this README
 ```
