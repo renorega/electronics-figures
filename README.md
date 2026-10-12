@@ -73,4 +73,6 @@ node build.mjs --light   # light page
 
 ## Credits
 
-The isometric drawing toolkit in `shared/` comes from the *anatomy* figure skill and is used under its MIT license (see `shared/kit/LICENSE`). Everything else is under the MIT license in `LICENSE`.
+These figures were made with the help of [**Anatomy**](https://skills.wheresryan.sh/anatomy), a Claude Code skill by wheresryan for building interactive isometric figures. If you'd like to make figures like these yourself, start there.
+
+The isometric drawing toolkit in `shared/` comes from the Anatomy skill and is used under its MIT license (see `shared/kit/LICENSE`). Everything else is under the MIT license in `LICENSE`.
