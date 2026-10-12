@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Electronics figures</title>
+<meta name="description" content="Interactive drawings that show how resistors, capacitors and coils behave.">
+<style>
+  :root {
+    --bg: #f7f7f5; --card: #ffffff; --ink: #1d1f22; --muted: #5d6268;
+    --line: #dcdcd8; --link: #2457c5; --touch: #3a6fe0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181b; --card: #1f2226; --ink: #ecedee; --muted: #a3a8ae; --line: #32363b; --link: #8fb0ff; --touch: #7d9dff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 1080px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 12px; }
+  .lead { color: var(--muted); max-width: 60ch; margin: 0 0 8px; }
+  .blue { color: var(--touch); font-weight: 600; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-top: 32px; }
+  article { background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+  article img { display: block; width: 100%; height: auto; aspect-ratio: 7 / 5; object-fit: contain; background: #fafaf8; border-bottom: 1px solid var(--line); }
+  .body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  h2 { font-size: 1.15rem; margin: 0; }
+  .body p { margin: 0; color: var(--muted); flex: 1; }
+  .links { display: flex; gap: 16px; flex-wrap: wrap; padding-top: 4px; }
+  a { color: var(--link); font-weight: 600; text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Electronics figures</h1>
+  <p class="lead">Little workbenches you can play with. Turn knobs, flip switches, and watch the current move, the lamps glow and the meters swing.</p>
+  <p class="lead">Parts coloured <span class="blue">blue</span> are the ones you can click or drag.</p>
+
+  <div class="grid">
+    <article>
+      <img src="images/resistor.png" alt="A battery box, a resistor and a glowing red LED on a white bench" width="912" height="592">
+      <div class="body">
+        <h2>How a resistor works</h2>
+        <p>Change the voltage or the resistor and see how bright the LED gets, and what happens when too much current burns it out.</p>
+        <div class="links"><a href="resistor/resistor-light.html">Play (light)</a><a href="resistor/resistor.html">Play (dark)</a></div>
+      </div>
+    </article>
+    <article>
+      <img src="images/capacitor.png" alt="A capacitor bench with two LEDs, a knife switch and a battery box" width="982" height="695">
+      <div class="body">
+        <h2>Capacitor and LED</h2>
+        <p>Watch a capacitor fill and empty: the green LED lights while it fills, the red one while it empties.</p>
+        <div class="links"><a href="capacitor/capacitor-light.html">Play (light)</a><a href="capacitor/capacitor.html">Play (dark)</a></div>
+      </div>
+    </article>
+    <article>
+      <img src="images/inductor.png" alt="A coil, a switch and an LED on a bench" width="784" height="570">
+      <div class="body">
+        <h2>Inductor (coil)</h2>
+        <p>A coil doesn't like sudden changes. The LED is slow to light up, and keeps glowing for a moment after you switch off.</p>
+        <div class="links"><a href="inductor/inductor-light.html">Play (light)</a><a href="inductor/inductor.html">Play (dark)</a></div>
+      </div>
+    </article>
+    <article>
+      <img src="images/twins.png" alt="A capacitor and a coil side by side, each with a lamp, sharing one switch" width="784" height="478">
+      <div class="body">
+        <h2>Capacitor vs coil</h2>
+        <p>Both parts side by side. Try steady power, a slow wiggle or a fast wiggle, and compare how differently they react.</p>
+        <div class="links"><a href="twins/twins-light.html">Play (light)</a><a href="twins/twins.html">Play (dark)</a></div>
+      </div>
+    </article>
+    <article>
+      <img src="images/rlc.png" alt="A resistor, coil and capacitor in one loop, with meters and an oscilloscope" width="982" height="695">
+      <div class="body">
+        <h2>Series RLC circuit</h2>
+        <p>Energy sloshes between the coil and the capacitor. The oscilloscope shows the current ringing and fading away.</p>
+        <div class="links"><a href="rlc/rlc-light.html">Play (light)</a><a href="rlc/rlc.html">Play (dark)</a></div>
+      </div>
+    </article>
+  </div>
+
+  <footer>Source code: <a href="https://github.com/renorega/electronics-figures">github.com/renorega/electronics-figures</a></footer>
+</main>
+</body>
+</html>
